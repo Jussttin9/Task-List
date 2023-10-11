@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Button?>
+<?import javafx.geometry.Insets?>
+
+<!--Different Layouts-->
+   <!--VBox displays components in a vertical fashion-->
+   <!--HBox displays components in a horizontal fashion-->
+   <!--StackPane allows you to stack components one on top of each other-->
+
+<VBox alignment="CENTER" spacing="20.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.PrimaryController">
+   <!--The chidren element corresponds to the getChildren() method in the VBox class-->
+   <!--Elements nested inside this will be converted to JavaFX components that are added to the collection obtained from the getChildren() method-->
+
+   <children>
+      <Label text="To-Do List" />
+      <Button fx:id="primaryButton" text="To-Do List" onAction="#switchToSecondary"/>
+
+      <!--TFrom what I'm guessing, you can add any components you would like to add onto the window within the "children" section-->
+      <!--The Labal ankle brackets contain a simple text box above the component-->
+      <!--The Button ankle brackets creates a button, and has properties such as id, text, and onAction-->
+         <!--the id value is what other classes use to refer this component-->
+         <!--the text value is what text is shown on that component (corresponds to setText() method in Label Object)-->
+         <!--the onAction value is the method that is called when a user interacts with the component-->
+            <!--to call a method make sure to place a hashtag(#) in front of the method name-->
+   </children>
+   <padding>
+   <!--This is how you make a comment-->
+   <!--The padding section determines how far apart the component is from other groups of components-->
+   <!--For example, increasing the value for button causes this component to adjust its position from other components such that it matches the spacing given for bottom-->
+      <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+   </padding>
+</VBox>

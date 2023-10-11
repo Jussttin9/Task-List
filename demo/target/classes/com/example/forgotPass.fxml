@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Button?>
+<?import javafx.geometry.Insets?>
+
+<VBox alignment="CENTER" spacing="20.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.forgotPass">
+    <HBox alignment="CENTER" spacing="10.0">
+        <children>
+            <Label text="New Password"/>
+            <PasswordField fx:id="newPassword"/>
+        </children>
+    </HBox>
+    <HBox alignment="CENTER" spacing="10.0">
+        <children>
+            <Label text="Confirm New Password"/>
+            <PasswordField fx:id="confirmNewPassword"/>
+        </children>
+        <padding>
+            <Insets right="46"/>
+        </padding>
+    </HBox>
+    <HBox alignment="CENTER" spacing="10.0">
+        <children>
+            <Button fx:id="submitButton" text="Submit" onAction="#switchToLogin"/>
+        </children>
+    </HBox>
+</VBox>

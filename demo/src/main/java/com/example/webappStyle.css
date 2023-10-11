@@ -1,0 +1,23 @@
+.button {
+    -fx-background-color: "gray";
+}
+.button:hover {
+    -fx-cursor: hand;
+}
+
+.check-box.check-box:selected .box {
+    -fx-background-color: #ffbdf3;
+}
+
+.check-box:hover {
+    -fx-cursor: hand;
+}
+
+.check-box:selected .mark {
+    -fx-background-color: white;
+}
+
+.text-field {
+    -fx-border-color:black;
+    -fx-background-color: rgb(243, 194, 125);
+}
